@@ -450,6 +450,15 @@ document.addEventListener("DOMContentLoaded", function(){
                         </div>
                     </div>
                     <div class="relative pl-6">
+                        <div class="timeline-dot border-dino-text"></div>
+                        <p class="text-dino-text font-bold text-sm">接續行程</p>
+                        <p class="font-bold mt-1">🛁 第五站：LUSH 銀座店</p>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://maps.google.com/?q=LUSH+銀座" target="_blank" class="map-btn"><i class="fa-solid fa-cart-shopping mr-1"></i>導航</a>
+                            <button onclick="jumpToGuide('guide-lush')" class="map-btn guide-jump"><i class="fa-solid fa-book-open mr-1"></i>必買導覽</button>
+                        </div>
+                    </div>
+                    <div class="relative pl-6">
                         <div class="timeline-dot border-dino-red"></div>
                         <p class="text-dino-red font-bold text-sm">20:30 <span class="tag-badge tag-arrive ml-1">預約報到</span></p>
                         <p class="font-bold mt-1">🎂🔥 慶生晚餐｜燒肉トラジ 銀座</p>
@@ -669,6 +678,18 @@ document.addEventListener("DOMContentLoaded", function(){
                         <label><input type="checkbox" data-guide-id="pj-1" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-dino-red text-xs">自由のブラ (Jiyuu no Bra)</span></label>
                         <label><input type="checkbox" data-guide-id="pj-2" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">Nice Body Bra 系列</span></label>
                         <label><input type="checkbox" data-guide-id="pj-3" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">2026 Sanrio 夏日聯名款</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="guide-lush" class="guide-card scroll-mt-header">
+                <div class="guide-card-header" style="background:linear-gradient(135deg,#00A896,#02C39A)"><div class="guide-icon">🛁</div><span class="text-white">LUSH 銀座店</span></div>
+                <div class="p-4 bg-white">
+                    <div class="guide-checklist-wrap">
+                        <p class="font-bold text-dino-primary text-xs mb-2">🛒 必買清單</p>
+                        <label><input type="checkbox" data-guide-id="lush-1" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">海水正藍洗髮餅 x2</span></label>
+                        <label><input type="checkbox" data-guide-id="lush-2" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">摩洛哥堅果洗髮皂 x2</span></label>
+                        <label><input type="checkbox" data-guide-id="lush-3" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">小紅帽洗髮餅 x10</span></label>
                     </div>
                 </div>
             </div>
