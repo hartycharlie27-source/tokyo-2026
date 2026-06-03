@@ -280,6 +280,12 @@ document.addEventListener("DOMContentLoaded", function(){
                 <div class="relative border-l-2 border-dashed border-orange-200 ml-3 space-y-6 pb-8">
                     <div class="relative pl-6">
                         <div class="timeline-dot border-dino-primary"></div>
+                        <p class="text-dino-primary font-bold text-sm">12:15 <span class="tag-badge tag-train ml-1">起飛</span></p>
+                        <p class="font-bold mt-1">✈️ CI104 桃園機場起飛</p>
+                        <p class="text-xs text-gray-500 mt-1">中華航空 CI104，桃園 T2 出發。</p>
+                    </div>
+                    <div class="relative pl-6">
+                        <div class="timeline-dot border-dino-primary"></div>
                         <p class="text-dino-primary font-bold text-sm">16:35 <span class="tag-badge tag-arrive ml-1">抵達</span></p>
                         <p class="font-bold mt-1">抵達成田機場</p>
                         <p class="text-xs text-gray-500 mt-1">至 B1 京成電鐵櫃檯掃 QR Code 兌換「Skyliner 對號車票」與「地鐵 48 小時券」。</p>
@@ -391,6 +397,22 @@ document.addEventListener("DOMContentLoaded", function(){
                         <a href="https://maps.google.com/?q=東京ドーム,後楽1-3-61,文京区,東京" target="_blank" class="map-btn"><i class="fa-solid fa-map mr-1"></i>導航</a>
                     </div>
 
+                    <!-- 午餐 板倉屋 + つじ田 -->
+                    <div class="relative pl-6">
+                        <div class="timeline-dot border-dino-primary"></div>
+                        <p class="text-dino-primary font-bold text-sm">12:30</p>
+                        <p class="font-bold mt-1">🍡 外帶 人形焼本舗 板倉屋</p>
+                        <p class="text-xs text-gray-500 mt-1">〒103-0013 東京都中央区日本橋人形町2-4-2　手焼き七福神人形焼，售完即止。</p>
+                        <a href="https://maps.google.com/?q=人形焼本舗板倉屋,日本橋人形町2-4-2,中央区,東京" target="_blank" class="map-btn"><i class="fa-solid fa-map mr-1"></i>導航</a>
+                    </div>
+                    <div class="relative pl-6">
+                        <div class="timeline-dot border-dino-primary"></div>
+                        <p class="text-dino-primary font-bold text-sm">12:45</p>
+                        <p class="font-bold mt-1">🍜 午餐：つじ田 日本橋人形町店</p>
+                        <p class="text-xs text-gray-500 mt-1">〒103-0013 東京都中央区日本橋人形町3-8-2 人形町ミハマビル1F　濃厚魚介つけ麺。土日 11:00～21:00。</p>
+                        <a href="https://maps.google.com/?q=つじ田日本橋人形町店,日本橋人形町3-8-2,中央区,東京" target="_blank" class="map-btn"><i class="fa-solid fa-utensils mr-1"></i>導航</a>
+                    </div>
+
                     <!-- 6. 小網神社 -->
                     <div class="relative pl-6">
                         <div class="timeline-dot border-dino-secondary"></div>
@@ -454,7 +476,10 @@ document.addEventListener("DOMContentLoaded", function(){
                         <p class="text-dino-text font-bold text-sm">17:50</p>
                         <p class="font-bold mt-1">💊 OS Drug 上野店</p>
                         <p class="text-xs text-gray-500 mt-1">上野アメ横丁附近</p>
-                        <a href="https://maps.google.com/?q=OS+DRUG+上野店,上野,台東区,東京" target="_blank" class="map-btn"><i class="fa-solid fa-cart-shopping mr-1"></i>導航</a>
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://maps.google.com/?q=OS+DRUG+上野店,上野,台東区,東京" target="_blank" class="map-btn"><i class="fa-solid fa-cart-shopping mr-1"></i>導航</a>
+                            <button onclick="jumpToGuide('guide-osdrug')" class="map-btn guide-jump"><i class="fa-solid fa-book-open mr-1"></i>必買導覽</button>
+                        </div>
                     </div>
 
                     <!-- 13. LUSH 上野マルイ店 -->
@@ -704,6 +729,20 @@ document.addEventListener("DOMContentLoaded", function(){
                         <label><input type="checkbox" data-guide-id="pj-1" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-dino-red text-xs">自由のブラ (Jiyuu no Bra)</span></label>
                         <label><input type="checkbox" data-guide-id="pj-2" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">Nice Body Bra 系列</span></label>
                         <label><input type="checkbox" data-guide-id="pj-3" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">2026 Sanrio 夏日聯名款</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="guide-osdrug" class="guide-card scroll-mt-header">
+                <div class="guide-card-header" style="background:linear-gradient(135deg,#6D9CE0,#4A7DC4)"><div class="guide-icon">💊</div><span class="text-white">OS Drug 上野店</span></div>
+                <div class="p-4 bg-white">
+                    <div class="guide-checklist-wrap">
+                        <p class="font-bold text-dino-primary text-xs mb-2">🛒 必買清單</p>
+                        <label><input type="checkbox" data-guide-id="osdrug-1" class="guide-checkbox shrink-0"><div><span class="guide-text font-bold text-gray-700 text-xs block">CITEETH WHITE 香草甜薄荷</span><p class="text-[10px] text-gray-400">プレミアム スウィートハーブミント</p></div></label>
+                        <label><input type="checkbox" data-guide-id="osdrug-2" class="guide-checkbox shrink-0"><div><span class="guide-text font-bold text-gray-700 text-xs block">CITEETH WHITE 優質水感薄荷</span><p class="text-[10px] text-gray-400">プレミアム ウォータリングミント</p></div></label>
+                        <label><input type="checkbox" data-guide-id="osdrug-3" class="guide-checkbox shrink-0"><span class="guide-text font-bold text-gray-700 text-xs">新ジキニン顆粒（感冒藥）</span></label>
+                        <label><input type="checkbox" data-guide-id="osdrug-4" class="guide-checkbox shrink-0"><div><span class="guide-text font-bold text-gray-700 text-xs block">メラノCC 深層酵素洗顏 130g</span><p class="text-[10px] text-gray-400">ディープクリア酵素洗顔</p></div></label>
+                        <label><input type="checkbox" data-guide-id="osdrug-5" class="guide-checkbox shrink-0"><div><span class="guide-text font-bold text-gray-700 text-xs block">相模保險套</span><p class="text-[10px] text-gray-400">サガミ コンドーム</p></div></label>
                     </div>
                 </div>
             </div>
